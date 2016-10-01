@@ -2,18 +2,23 @@ body {
   margin: 0;
 }
 
-h1 {
-  font-size: 3em;
+.h1-intro {
+  font-size: 4em;
   display: block;
   color: white;
   font-weight: 300;
 }
 
-p {
+.p-intro {
   font-size: 1.5em;
   font-weight: 500;
   color: #C3CAD9;
 }
+
+h2 {
+  /*padding-bottom: 20px;*/
+}
+
 
 /* Sections */
 
@@ -22,7 +27,6 @@ section {
   display: table;
   margin: 0;
   max-width: none;
-  text-align: center;
   background-color: #373B44;
   height: 100vh;
 }
@@ -31,6 +35,7 @@ section {
   padding-bottom: 2em;
   height: 94vh;
   display: flex;
+  text-align: center;
   justify-content: center;
   align-items: center;
 }
@@ -38,19 +43,67 @@ section {
 .info {
   background-color: #E76D76;
   height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 75px;
 }
 
 .projects {
   background-color: #373B44;
-  height: 100vh;
+  height:auto;
+  height:auto !important;
+  padding-top: 100px;
+  padding-bottom: 75px;
 }
 
 .skills {
   background-color: #E76D76;
   height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 75px;
 }
 
 .contact {
   background-color: #373B44;
-  height: 100vh;
+  height:auto;
+  height:auto !important; 
+  padding-top: 100px;
+  padding-bottom: 75px;
+}
+
+hr.line {
+     margin-top: 30px;
+     margin-bottom: 30px;
+}
+
+/* Card */
+
+.card-avatar .waves-effect {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card-avatar img {
+    height: 150px;
+    width: 150px;
+    border-radius: 75px;
+}
+
+.card-avatar .card-content {
+    text-align: center;
+}
+
+.card .card-content p {
+    margin: 15px 0px;
+}
+
+.card-avatar .card-content i {
+    font-size: 1.5remav
+}
+
+.card-avatar .card-content .card-title {
+    line-height: 30px !important;
+}
+
+.card-title.activator.grey-text.text-darken-4 {
+    font-size: 18px;
 }
