@@ -15,6 +15,10 @@ body {
   color: #C3CAD9;
 }
 
+p {
+  color: white;
+}
+
 h2 {
   padding-top: 50px;
 }
@@ -98,4 +102,10 @@ hr.line {
 
 .card-title.activator.grey-text.text-darken-4 {
     font-size: 18px;
+}
+
+.material-icons.md-48 { font-size: 48px; }
+
+.light.center {
+  color: rgb(221, 221, 221);
 }
