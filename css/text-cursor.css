@@ -3,7 +3,6 @@
   visibility: hidden;
 }
 
-/* ----- blinking cursor animation ----- */
 .typed-cursor{
   opacity: 1;
   -webkit-animation: blink 0.95s infinite;
