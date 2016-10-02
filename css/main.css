@@ -10,7 +10,7 @@ body {
 }
 
 .p-intro {
-    font-size: 1.5em;
+    font-size: 1.75em;
     font-weight: 500;
     color: #C3CAD9;
 }
@@ -123,9 +123,7 @@ hr.line {
   margin-bottom: 40px;
 }
 
-/**
- * Circle Styles
- */
+/* Circle Styles */
 
  .circle{
    position:relative;
