@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <!-- Custom CSS  -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/text-cursor.css">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
     <!-- Google material icons  -->
@@ -14,13 +15,14 @@
 </head>
 
 <body>
+
     <nav>
         <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Example</a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="#">Option 1</a></li>
-                <li><a href="#">Option 2</a></li>
-                <li><a href="#">Option 3</a></li>
-                <li><a href="#">Option 4</a></li>
+                <li><a href="#" id="info_link">Info</a></li>
+                <li><a href="#" id="projects_link">Projects</a></li>
+                <li><a href="#" id="skills_link">Expertise</a></li>
+                <li><a href="#" id="contact_link">Contact</a></li>
             </ul>
             <ul id="nav-mobile" class="side-nav">
                 <li><a href="#">Option 1</a></li>
@@ -36,14 +38,25 @@
 
     <section class="intro">
         <div class="container">
-            <h1 class="h1-intro">This is some sample text.</h1>
-            <p class="p-intro">This is some sample text.</p>
+            <h1 class="h1-intro">This is an example portfolio website</h1>
+            <h4 class="p-intro">This is some sample text.</h4>
+            <div class="shell-wrap">
+                <p class="shell-top-bar">/Users/Adam/Development/Web/</p>
+                <ul class="shell-body">
+                  <p id="line1" class="hidden">sudo apt-get install purpose of life</p>
+                  <p id="line2" class="hidden">sudo apt-get update human mind</p>
+                  <p id="line3" class="hidden">sudo apt-get download peace</p>
+                  <p id="cursor-line" class="visible"><span class="typed-cursor">&#9608;</span></p>
+                </ul>
+
+            </div>
         </div>
+
     </section>
 
     <!-- Info  -->
 
-    <section class="info">
+    <section class="info" id="info">
         <div class="container">
             <h2 class="header text_b white-text">Information</h2>
             <hr class="line">
@@ -79,7 +92,7 @@
 
     <!-- Projects  -->
 
-    <section class="projects">
+    <section class="projects" id="projects">
         <div class="container">
             <h2 class="header text_b white-text">Projects</h2>
             <hr class="line">
@@ -87,7 +100,7 @@
                 <div class="col s12 m4 l4">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/batman.png">
+                            <img class="activator" src="img/project.jpg">
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Project Title<i class="material-icons right">more_vert</i></span>
@@ -104,7 +117,7 @@
                 <div class="col s12 m4 l4">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/batman.png">
+                            <img class="activator" src="img/project.jpg">
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Project Title<i class="material-icons right">more_vert</i></span>
@@ -121,7 +134,7 @@
                 <div class="col s12 m4 l4">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/batman.png">
+                            <img class="activator" src="img/project.jpg">
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Project Title<i class="material-icons right">more_vert</i></span>
@@ -138,7 +151,7 @@
                 <div class="col s12 m4 l4">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/batman.png">
+                            <img class="activator" src="img/project.jpg">
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Project Title<i class="material-icons right">more_vert</i></span>
@@ -155,7 +168,7 @@
                 <div class="col s12 m4 l4">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/batman.png">
+                            <img class="activator" src="img/project.jpg">
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Project Title<i class="material-icons right">more_vert</i></span>
@@ -172,7 +185,7 @@
                 <div class="col s12 m4 l4">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/batman.png">
+                            <img class="activator" src="img/project.jpg">
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Project Title<i class="material-icons right">more_vert</i></span>
@@ -192,9 +205,9 @@
         <br>
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="container">
-            <h2 class="header text_b white-text">Area of Expertise</h2>
+            <h2 class="header text_b white-text">Expertise</h2>
             <hr class="line">
             <div class="row">
                 <div class="col s12">
@@ -225,7 +238,7 @@
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="container">
             <h2 class="header text_b white-text">Contact</h2>
             <hr class="line">
@@ -281,7 +294,6 @@
         <div class="footer-copyright">
             <div class="container">
                 © 2016 Adam Thuvesen
-                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
             </div>
         </div>
     </footer>
@@ -290,7 +302,10 @@
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script src="bower_components/typed.js/js/typed.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/typing.js"></script>
+
 </body>
 
 </html>
