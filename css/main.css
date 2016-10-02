@@ -1,75 +1,77 @@
 body {
-  margin: 0;
+  background-color: #E76D76;
 }
 
 .h1-intro {
-  font-size: 4em;
-  display: block;
-  color: white;
-  font-weight: 300;
+    font-size: 4em;
+    display: block;
+    color: white;
+    font-weight: 300;
 }
 
 .p-intro {
-  font-size: 1.5em;
-  font-weight: 500;
-  color: #C3CAD9;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #C3CAD9;
 }
 
 p {
-  color: white;
+    color: white;
 }
 
 h2 {
-  padding-top: 50px;
+    padding-top: 50px;
 }
 
 
 /* Sections */
 
 section {
-  width: 100%;
-  display: table;
-  margin: 0;
-  max-width: none;
-  background-color: #373B44;
-  height: 100vh;
-  overflow:hidden;
+    width: 100%;
+    display: table;
+    margin: 0;
+    max-width: none;
+    background-color: #373B44;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .intro {
-  height: 94vh;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+    height: 94vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .info {
-  background-color: #E76D76;
-  height: 100vh;
+    background-color: #E76D76;
+    height: 100vh;
 }
 
 .projects {
-  background-color: #373B44;
-  height:auto;
-  height:auto !important;
+    background-color: #373B44;
+    height: auto;
+    height: auto !important;
 }
 
 .skills {
-  background-color: #E76D76;
-  height: 100vh;
+    background-color: #E76D76;
+    height: auto;
+    height: auto !important;
 }
 
 .contact {
-  background-color: #373B44;
-  height:auto;
-  height:auto !important;
+    background-color: #373B44;
+    height: auto;
+    height: auto !important;
 }
 
 hr.line {
-     margin-top: 30px;
-     margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
+
 
 /* Card */
 
@@ -104,8 +106,41 @@ hr.line {
     font-size: 18px;
 }
 
-.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
+.material-icons.md-64 {
+    font-size: 64px;
+}
 
 .light.center {
-  color: rgb(221, 221, 221);
+    color: rgb(221, 221, 221);
 }
+
+.contact a {
+  margin-bottom: 40px;
+}
+
+/**
+ * Circle Styles
+ */
+
+ .circle{
+   position:relative;
+   width:75%;
+   padding-bottom:75%;
+   background:rgb(69, 69, 69);
+   border-radius:50%;
+   margin: 0 auto;
+   margin-top: 100px;
+   margin-bottom: 100px;
+   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.26);
+ }
+ .circle h5{
+   position:absolute;
+   top:50%; left:50%;
+   transform: translate(-50%, -50%);
+   margin:0;
+   color: rgb(187, 187, 187);
+ }
