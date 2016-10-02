@@ -109,10 +109,12 @@ hr.line {
 
 .material-icons.md-48 {
     font-size: 48px;
+      /*color: rgb(54, 55, 70);*/
 }
 
 .material-icons.md-64 {
     font-size: 64px;
+    /*color: rgb(54, 55, 70);*/
 }
 
 .light.center {
@@ -129,19 +131,19 @@ hr.line {
    position:relative;
    width:75%;
    padding-bottom:75%;
-   background:rgb(69, 69, 69);
+   background:rgb(60, 60, 60);
    border-radius:50%;
    margin: 0 auto;
    margin-top: 100px;
    margin-bottom: 100px;
-   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.26);
+   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.26);
  }
  .circle h5{
    position:absolute;
    top:50%; left:50%;
    transform: translate(-50%, -50%);
    margin:0;
-   color: rgb(187, 187, 187);
+   color: rgb(255, 138, 0);
  }
 
 /* Shell */
