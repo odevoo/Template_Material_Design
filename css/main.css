@@ -16,7 +16,7 @@ body {
 }
 
 h2 {
-  /*padding-bottom: 20px;*/
+  padding-top: 50px;
 }
 
 
@@ -29,10 +29,10 @@ section {
   max-width: none;
   background-color: #373B44;
   height: 100vh;
+  overflow:hidden;
 }
 
 .intro {
-  padding-bottom: 2em;
   height: 94vh;
   display: flex;
   text-align: center;
@@ -43,31 +43,23 @@ section {
 .info {
   background-color: #E76D76;
   height: 100vh;
-  padding-top: 100px;
-  padding-bottom: 75px;
 }
 
 .projects {
   background-color: #373B44;
   height:auto;
   height:auto !important;
-  padding-top: 100px;
-  padding-bottom: 75px;
 }
 
 .skills {
   background-color: #E76D76;
   height: 100vh;
-  padding-top: 100px;
-  padding-bottom: 75px;
 }
 
 .contact {
   background-color: #373B44;
   height:auto;
-  height:auto !important; 
-  padding-top: 100px;
-  padding-bottom: 75px;
+  height:auto !important;
 }
 
 hr.line {
