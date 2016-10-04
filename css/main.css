@@ -24,7 +24,6 @@ h2 {
     padding-top: 50px;
 }
 
-
 /* Sections */
 
 section {
@@ -38,7 +37,7 @@ section {
 }
 
 .intro {
-    height: 94vh;
+    height: calc(100vh - 64px);
     display: flex;
     text-align: center;
     justify-content: center;
@@ -74,32 +73,6 @@ hr.line {
     margin-top: 30px;
     margin-bottom: 30px;
 }
-
-
-/* Card */
-
-/*.card-avatar .waves-effect {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.card-avatar img {
-    height: 150px;
-    width: 150px;
-    border-radius: 75px;
-}
-
-.card-avatar .card-content {
-    text-align: center;
-}
-
-.card-avatar .card-content i {
-    font-size: 1.5remav
-}
-
-.card-avatar .card-content .card-title {
-    line-height: 30px !important;
-}*/
 
 .card .card-content p {
     margin: 15px 0px;
@@ -195,7 +168,7 @@ hr.line {
   list-style: none;
   background: #141414;
   color: #45D40C;
-  font: 0.8em 'Andale Mono', Consolas, 'Courier New';
+  font: 0.9em 'Andale Mono', Consolas, 'Courier New';
   line-height: 1.6em;
 
   -webkit-border-bottom-right-radius: 3px;
@@ -207,7 +180,7 @@ hr.line {
 }
 
 .shell-body li:before {
-  content: '$';
+  content: '>>';
   position: absolute;
   left: 0;
   top: 0;
@@ -217,4 +190,8 @@ hr.line {
   word-wrap: break-word;
   position: relative;
   padding: 0 0 0 15px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1000px) {
+  #shell { display: none; }  /* show it on small screens */
 }

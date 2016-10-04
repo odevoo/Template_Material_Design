@@ -1,7 +1,6 @@
-// set typing speed and wait times
 var timeInit = 1000;     // initial wait before typing first line
 var timeGap = 1000;      // wait time between each line
-var timeChar = 40;       // time until next letter
+var timeChar = 60;       // time until next letter
 
 var cursorChar = '&#9608;';
 
@@ -50,6 +49,7 @@ var typeWriter = function(index) {
 // calculated time delays
 var delayTime = [timeInit];
 var cumulativeDelayTime = [timeInit];
+
 for (var i = 0; i < originId.length; i++) {
   var elapsedTimeLine = originText[i].length * timeChar + timeGap + timeChar * 2;
   delayTime.push(elapsedTimeLine);
@@ -62,6 +62,7 @@ for (var i = 0; i < originId.length; i++) {
 
 // calls setTimeout for each line
 var typeLineTimeout = new Array();
+
 for (var i = 0; i < originId.length; i++) {
   typeLineTimeout[i] = setTimeout((function(index) {
     return function() {
@@ -80,14 +81,6 @@ var skip = function() {
     clearTimeout(typeLineTimeout[i]);
   };
 };
-
-// rewrite text with value stored on page load
-
-// var rewriteText = function(index) {
-//   var loc = document.getElementById(originId[index]);
-//   loc.innerHTML = '&gt;&gt; ' + originText[index];
-//   loc.className = 'visible';
-// };
 
 var rewriteText = function(element, index, array) {
   var loc = document.getElementById(element);
